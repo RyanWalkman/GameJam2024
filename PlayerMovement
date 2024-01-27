@@ -15,12 +15,16 @@ public class PlayerMovement : MonoBehaviour
 
    void update ()
 {
+float dirX = Input.GetAxisRaw("Horizontal");
+rb.velocity =new Vector2(dirX * 7f, rb.velocity.y);
 // This code is our player jump mechanic
-  if(Input.GetButtonDown("space"))
+  if(Input.GetButtonDown("Jump"))
   {
-    GetComponent<Rigidbody2D>().velocity= newVector3(0,7,0);
+    rb.velocity= newVector2(rb.velocity.x,14f);
   }
 // This is our players 
+
+
 }
 }
 
