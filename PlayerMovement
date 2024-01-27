@@ -1,0 +1,9 @@
+// This code is our players jump mechanic 
+void update ()
+{
+  if(Input.GetKey("space"))
+  {
+    GetComponent<Rigidbidy2D>().velocity= newVector3(0,7,0);
+    
+  }
+}
